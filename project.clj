@@ -3,8 +3,6 @@
             :url "https://github.com/AvisoNovate/toolchest"
             :license {:name "Apache Sofware License 2.0"
                       :url  "http://www.apache.org/licenses/LICENSE-2.0.html"}
-            ;; Not much testing so far, but more should be coming in the future, so we'll leave
-            ;; this scaffolding in place.
             :profiles {:dev
                        {:dependencies [[io.aviso/pretty "0.1.12"]
                                        [speclj "3.1.0"]
@@ -19,8 +17,7 @@
                                     "scp" "-r" "." "hlship_howardlewisship@ssh.phx.nearlyfreespeech.net:io.aviso/toolchest"]
                       "release"    ["do"
                                     "clean,"
-                                    ;; We can re-enable this once there are some tests:
-                                    #_ "spec,",
+                                    "spec,",
                                     "doc,"
                                     "deploy-doc,"
                                     "deploy" "clojars"]}
