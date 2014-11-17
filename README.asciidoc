@@ -1,0 +1,11 @@
+== Toolchest - Generally useful macros and functions
+
+image:http://clojars.org/io.aviso/toolchest/latest-version.svg[Clojars Project, link="http://clojars.org/io.aviso/rook"]
+
+Toolchest is a small library of generally useful functions and macros.
+
+Toolchest has no dependencies beyong Clojure.
+
+Toolchest is available under the terms of the Apache Software License 2.0.
+
+link:http://howardlewisship.com/io.aviso/toolchest/[API Documentation]
