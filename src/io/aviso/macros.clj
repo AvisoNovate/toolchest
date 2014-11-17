@@ -69,15 +69,15 @@
   one string, followed by any number of vectors:
 
 
-     (defn example
-       {:arglists '([options strings... & vectors] [strings... & values])}
-       [& args]
-       (consume args
-         [options map? :?       ; nil or a map
-          strings string? :+    ; seq of strings, at least one
-          values :&]            ; seq of values, may be empty
-          ;; Use options, strings, values here
-          ...))
+      (defn example
+        {:arglists '([options strings... & vectors] [strings... & values])}
+        [& args]
+        (consume args
+          [options map? :?       ; nil or a map
+           strings string? :+    ; seq of strings, at least one
+           values :&]            ; seq of values, may be empty
+           ;; Use options, strings, values here
+           ...))
   "
   [coll bindings & body]
   (let [[symbol pred arity] bindings]
