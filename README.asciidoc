@@ -4,7 +4,7 @@ image:http://clojars.org/io.aviso/toolchest/latest-version.svg[Clojars Project, 
 
 Toolchest is a small library of generally useful functions and macros.
 
-Toolchest has no dependencies beyong Clojure.
+Toolchest has no dependencies beyond Clojure.
 
 Toolchest is available under the terms of the Apache Software License 2.0.
 
