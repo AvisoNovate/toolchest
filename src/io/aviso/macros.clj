@@ -56,12 +56,10 @@
   :&
   : Used to indicate consumption of all remaining values, if any, from the collection.
     It is not followed by an arity, and must be the final term in the bindings vector.
-    This is equivalent to `symbol (constantly true) :*` but is more conside and slightly
-    more efficient.
 
   :+
-  : Used to consume a single value always; this is equivalent to the triplet
-    `symbol (constantly true) 1`, but is more concise and slightly more efficient.
+  : Used to consume a single value always (throwing an exception if the collection is
+    empty).
 
   consume expands into a let form, so the symbol in each triplet may be a destructuring form.
 
