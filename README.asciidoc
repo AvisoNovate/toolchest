@@ -1,6 +1,6 @@
 == Toolchest - Generally useful macros and functions
 
-image:http://clojars.org/io.aviso/toolchest/latest-version.svg[Clojars Project, link="http://clojars.org/io.aviso/rook"]
+image:http://clojars.org/io.aviso/toolchest/latest-version.svg[Clojars Project, link="http://clojars.org/io.aviso/toolchest"]
 
 Toolchest is a small library of generally useful functions and macros.
 
