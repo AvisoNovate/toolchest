@@ -1,4 +1,4 @@
-(defproject io.aviso/toolchest "0.1.1"
+(defproject io.aviso/toolchest "0.1.2-SNAPSHOT"
             :description "Generally useful macros and functions"
             :url "https://github.com/AvisoNovate/toolchest"
             :license {:name "Apache Sofware License 2.0"
