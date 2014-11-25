@@ -7,7 +7,31 @@
   for that expression. An empty cond-let returns nil.
 
   cond-let makes it possible to create readable code that doesn't end up nesting
-  endlessly."
+  ;endlessly.
+
+  A typical example is where several steps must occur, perhaps reading data from
+  an external datastore and making a few consistency checks:
+
+      (defn apply-payment [db-conn order-id user-id payment-info]
+        (cond-let
+          [order (find-order-by-id db-conn order-id)]
+
+          (nil? order)
+          not-found-response
+
+          (not (owned-by? order user-id))
+          forbidden-response
+
+          [existing-payment (find-payment db-conn (:payment-id order))]
+
+          (some? existing-payment)
+          already-payed-response
+
+          :else
+          (do
+            (attach-payment db-conn order payment-info)
+
+            updated-response)))"
   [& forms]
   (when forms
     (if (vector? (first forms))
