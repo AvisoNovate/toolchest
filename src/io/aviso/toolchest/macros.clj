@@ -63,18 +63,18 @@
 
   consume expands into a let form, so the symbol in each triplet may be a destructuring form.
 
-  As an example, a function that take an optional map followed at least
+  As an example, a function that expects an optional map followed by at least
   one string, followed by any number of vectors:
 
 
       (defn example
-        {:arglists '([options strings... & vectors] [strings... & values])}
+        {:arglists '([options strings... & vectors] [strings... & vectors])}
         [& args]
         (consume args
           [options map? :?       ; nil or a map
            strings string? :+    ; seq of strings, at least one
-           values :&]            ; seq of values, may be empty
-           ;; Use options, strings, values here
+           vectors :&]           ; remaining arguments, may be empty
+           ;; Use options, strings, vectors here
            ...))
   "
   [coll bindings & body]
