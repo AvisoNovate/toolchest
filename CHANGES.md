@@ -2,7 +2,7 @@
 
 Changed the io.aviso.macros namespace to be io.aviso.toolchest.macros.
 
-Added the io.aviso.toolchest.exceptions and collections namespaces.
+Added the io.aviso.toolchest.exceptions, collections, and threads namespaces.
 
 ## 0.1.0 - 17 Nov 2014
 
