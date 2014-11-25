@@ -2,6 +2,8 @@
 
 image:http://clojars.org/io.aviso/toolchest/latest-version.svg[Clojars Project, link="http://clojars.org/io.aviso/toolchest"]
 
+image:https://drone.io/github.com/AvisoNovate/toolchest/status.png[Build Status, link="https://drone.io/github.com/AvisoNovate/toolchest"]
+
 Toolchest is a small library of generally useful functions and macros.
 
 Toolchest has no dependencies beyond Clojure 1.6.
