@@ -1,6 +1,7 @@
 (ns io.aviso.toolchest.collections
   "Some useful functions related to Clojure collections."
-  {:added "0.1.1"})
+  {:added "0.1.1"}
+  (:require [clojure.pprint :as pprint]))
 
 (defn hash-map-by
   "Constructs a hash map from the supplied values.
@@ -18,3 +19,29 @@
     (zipmap (map key-fn values) values))
   ([key-fn value-fn values]
     (zipmap (map key-fn values) (map value-fn values))))
+
+(defn pretty-print
+  "Pretty-prints the supplied object to a returned string."
+  [object]
+  (pprint/write object
+                :stream nil
+                :pretty true))
+
+(def ^:dynamic *default-brief-level*
+  "Default for [[pretty-print-brief]] when setting the maximium print level."
+  4)
+
+(def ^:dynamic *default-brief-length*
+  "Default for [[pretty-print-brief]] when setting the maximum print length."
+  5)
+
+(defn pretty-print-brief
+  "Like [[pretty-print]], but prints the object more briefly, with limits on level and length.
+
+  Returns the printed object as a string."
+  ([object]
+    (pretty-print-brief object *default-brief-level* *default-brief-length*))
+  ([object print-level print-length]
+    (binding [*print-level* print-level
+              *print-length* print-length]
+      (pretty-print object))))
