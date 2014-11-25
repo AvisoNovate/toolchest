@@ -1,4 +1,4 @@
-(ns io.aviso.macros
+(ns io.aviso.toolchest.macros
   "Generally useful macros for prettier and more expressive code.")
 
 (defmacro cond-let

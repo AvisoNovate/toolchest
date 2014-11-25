@@ -1,9 +1,9 @@
 (ns consume-spec
   "Tests for the consume macro."
   (:use speclj.core
-        io.aviso.macros))
+        io.aviso.toolchest.macros))
 
-(describe "io.aviso.macros/consume"
+(describe "io.aviso.toolchest.macros/consume"
 
   (it "allows for an empty bindings vector"
       (should= :ok
