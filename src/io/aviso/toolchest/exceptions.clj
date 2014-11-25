@@ -5,7 +5,7 @@
     [clojure.string :as str]))
 
 (defn to-message
-  "Converts an exception to a message. Normally, this is the message propety of the exception, but if
+  "Converts an exception to a message. Normally, this is the message property of the exception, but if
   that's blank, the fully qualified class name of the exception is used instead."
   [^Throwable t]
   (let [m (.getMessage t)]
