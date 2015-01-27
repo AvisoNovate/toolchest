@@ -5,7 +5,6 @@
                       :url  "http://www.apache.org/licenses/LICENSE-2.0.html"}
             :profiles {:dev
                        {:dependencies [[io.aviso/pretty "0.1.12"]
-                                       [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                                        [speclj "3.1.0"]
                                        [log4j "1.2.17"]]}}
             ;; List "resolved" dependencies first, which occur when there are conflicts.
