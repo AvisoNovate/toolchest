@@ -1,4 +1,6 @@
-## 0.1.2 - UNRELEASED
+## 0.1.2 - 17 Apr 2015
+
+Added the io.aviso.toolchest.metadata namespace.
 
 ## 0.1.1 - 25 Nov 2014
 
