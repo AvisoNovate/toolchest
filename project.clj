@@ -1,28 +1,23 @@
 (defproject io.aviso/toolchest "0.1.3"
-            :description "Generally useful macros and functions"
-            :url "https://github.com/AvisoNovate/toolchest"
-            :license {:name "Apache Sofware License 2.0"
-                      :url  "http://www.apache.org/licenses/LICENSE-2.0.html"}
-            :profiles {:dev
-                       {:dependencies [[io.aviso/pretty "0.1.17"]
-                                       [speclj "3.2.0"]
-                                       [log4j "1.2.17"]
-                                       [criterium "0.4.3"]]}}
-            ;; List "resolved" dependencies first, which occur when there are conflicts.
-            ;; We pin down the version we want, then exclude anyone who disagrees.
-            :dependencies [[org.clojure/clojure "1.6.0"]]
-            :plugins [[speclj "3.2.0"]
-                      [lein-shell "0.4.0"]]
-            :shell {:commands {"scp" {:dir "doc"}}}
-            :aliases {"deploy-doc" ["shell"
-                                    "scp" "-r" "." "hlship_howardlewisship@ssh.phx.nearlyfreespeech.net:io.aviso/toolchest"]
-                      "release"    ["do"
-                                    "clean,"
-                                    "spec,",
-                                    "doc,"
-                                    "deploy-doc,"
-                                    "deploy" "clojars"]}
-            :test-paths ["spec"]
-            :codox {:src-dir-uri               "https://github.com/AvisoNovate/toolchest/blob/master/"
-                    :src-linenum-anchor-prefix "L"
-                    :defaults                  {:doc/format :markdown}})
+  :description "Generally useful macros and functions"
+  :url "https://github.com/AvisoNovate/toolchest"
+  :license {:name "Apache Sofware License 2.0"
+            :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
+  :profiles {:dev
+             {:dependencies [[io.aviso/pretty "0.1.20"]
+                             [speclj "3.3.1"]
+                             [io.aviso/logging "0.1.0"]
+                             [criterium "0.4.3"]]}}
+  ;; List "resolved" dependencies first, which occur when there are conflicts.
+  ;; We pin down the version we want, then exclude anyone who disagrees.
+  :dependencies [[org.clojure/clojure "1.7.0"]]
+  :plugins [[speclj "3.3.1"]
+            [lein-codox "0.9.0"]]
+  :aliases {"release" ["do"
+                       "clean,"
+                       "spec,",
+                       "codox,"
+                       "deploy" "clojars"]}
+  :test-paths ["spec"]
+  :codox {:source-uri "https://github.com/AvisoNovate/pretty/blob/master/{filepath}#L{line}"
+          :metadata   {:doc/format :markdown}})
