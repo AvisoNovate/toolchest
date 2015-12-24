@@ -6,7 +6,6 @@
   :profiles {:dev
              {:dependencies [[io.aviso/pretty "0.1.20"]
                              [speclj "3.3.1"]
-                             [io.aviso/logging "0.1.0"]
                              [criterium "0.4.3"]]}}
   ;; List "resolved" dependencies first, which occur when there are conflicts.
   ;; We pin down the version we want, then exclude anyone who disagrees.
