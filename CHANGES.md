@@ -1,4 +1,4 @@
-## 0.1.3 - UNRELEASED
+## 0.1.3 - 24 Dec 2015
 
 Updated some dependencies, including Clojure to 1.7.
 
