@@ -1,6 +1,8 @@
 ## 0.1.3 - UNRELEASED
 
+Updated some dependencies, including Clojure to 1.7.
 
+Added the io.aviso.toolchest.testing namespace.
 
 ## 0.1.2 - 17 Apr 2015
 

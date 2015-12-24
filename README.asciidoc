@@ -6,8 +6,10 @@ image:https://drone.io/github.com/AvisoNovate/toolchest/status.png[Build Status,
 
 Toolchest is a small library of generally useful functions and macros.
 
-Toolchest has no dependencies beyond Clojure 1.6.
+Toolchest has no dependencies beyond Clojure 1.7.
 
 Toolchest is available under the terms of the Apache Software License 2.0.
 
-link:http://howardlewisship.com/io.aviso/toolchest/[API Documentation]
+© 2014-2015 Aviso
+
+link:http://avisonovate.github.io/docs/toolchest/[API Documentation]
