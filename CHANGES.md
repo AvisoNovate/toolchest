@@ -1,3 +1,7 @@
+## 0.1.4 - UNRELEASED
+
+Added the io.aviso.toolchest.vars namespace.
+
 ## 0.1.3 - 24 Dec 2015
 
 Updated some dependencies, including Clojure to 1.7.
@@ -16,4 +20,4 @@ Added the io.aviso.toolchest.exceptions, collections, and threads namespaces.
 
 ## 0.1.0 - 17 Nov 2014
 
-* Initial release
+Initial release.
