@@ -45,3 +45,12 @@
     (binding [*print-level* print-level
               *print-length* print-length]
       (pretty-print object))))
+
+(defn update-if?
+  "Updates a key in an map (or other associative structure) only if it exists, otherwise returns
+  the map unchanged."
+  {:added "0.1.4"}
+  [m k f & args]
+  (if-not (contains? m k)
+    m
+    (apply update m k f args)))

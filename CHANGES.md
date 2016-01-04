@@ -2,6 +2,8 @@
 
 Added the io.aviso.toolchest.vars namespace.
 
+Added the io.aviso.toolchest.collections.update-if? function.
+
 ## 0.1.3 - 24 Dec 2015
 
 Updated some dependencies, including Clojure to 1.7.
