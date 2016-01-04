@@ -4,8 +4,7 @@
   :license {:name "Apache Sofware License 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
   :profiles {:dev
-             {:dependencies [[io.aviso/pretty "0.1.20"]
-                             [speclj "3.3.1"]
+             {:dependencies [[speclj "3.3.1"]
                              [criterium "0.4.3"]]}}
   ;; List "resolved" dependencies first, which occur when there are conflicts.
   ;; We pin down the version we want, then exclude anyone who disagrees.
