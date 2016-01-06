@@ -54,3 +54,9 @@
   (if-not (contains? m k)
     m
     (apply update m k f args)))
+
+(defn into+
+  "Like clojure.core/into but accepts any number of seqs to combine."
+  {:added "0.1.4"}
+  [& seqs]
+  (reduce into seqs))
