@@ -2,7 +2,7 @@
 
 Added the io.aviso.toolchest.vars namespace.
 
-Added the io.aviso.toolchest.collections.update-if? and into+ functions.
+Added the io.aviso.toolchest.collections/update-if? and into+ functions.
 
 ## 0.1.3 - 24 Dec 2015
 
