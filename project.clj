@@ -10,7 +10,7 @@
   ;; We pin down the version we want, then exclude anyone who disagrees.
   :dependencies [[org.clojure/clojure "1.7.0"]]
   :plugins [[speclj "3.3.1"]
-            [lein-codox "0.9.0"]]
+            [lein-codox "0.9.3"]]
   :aliases {"release" ["do"
                        "clean,"
                        "spec,",
