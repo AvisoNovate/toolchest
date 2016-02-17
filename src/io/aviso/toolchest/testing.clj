@@ -3,7 +3,7 @@
   {:added "0.1.3"})
 
 (defmacro is-thrown
-  "Expects the expression to thrown an exception.
+  "Expects the expression to throw an exception.
 
   If the expression does throw, then the exception
   is caught, bound to the symbol, and the body is evaluated.
