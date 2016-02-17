@@ -4,6 +4,8 @@ Added the io.aviso.toolchest.vars namespace.
 
 Added the io.aviso.toolchest.collections/update-if? and into+ functions.
 
+Added the io.aviso.toolchest.metadata/copying-meta macro.
+
 ## 0.1.3 - 24 Dec 2015
 
 Updated some dependencies, including Clojure to 1.7.
