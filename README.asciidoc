@@ -10,6 +10,6 @@ Toolchest has no dependencies beyond Clojure 1.7.
 
 Toolchest is available under the terms of the Apache Software License 2.0.
 
-© 2014-2015 Aviso
+© 2014-2016 Aviso
 
 link:http://avisonovate.github.io/docs/toolchest/[API Documentation]
