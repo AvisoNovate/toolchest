@@ -1,4 +1,4 @@
-(defproject io.aviso/toolchest "0.1.4"
+(defproject io.aviso/toolchest "0.1.5"
   :description "Generally useful macros and functions"
   :url "https://github.com/AvisoNovate/toolchest"
   :license {:name "Apache Sofware License 2.0"
@@ -17,5 +17,5 @@
                        "codox,"
                        "deploy" "clojars"]}
   :test-paths ["spec"]
-  :codox {:source-uri "https://github.com/AvisoNovate/pretty/blob/master/{filepath}#L{line}"
+  :codox {:source-uri "https://github.com/AvisoNovate/toolchest/blob/master/{filepath}#L{line}"
           :metadata   {:doc/format :markdown}})

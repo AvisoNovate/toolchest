@@ -1,4 +1,4 @@
-## 0.1.4 - UNRELEASED
+## 0.1.4 - 17 Feb 2016
 
 Added the io.aviso.toolchest.vars namespace.
 
