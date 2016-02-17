@@ -7,7 +7,7 @@
   [x & keyvals]
   (apply vary-meta x assoc keyvals))
 
-(defmacro copying-meta
+(defmacro merging-meta
   "Evaluates the expression, then merges metadata from x into the result.
   Metadata on the expression takes precendence over metadata from x.
 
