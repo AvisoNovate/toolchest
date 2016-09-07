@@ -1,4 +1,4 @@
-(ns collections-spec
+(ns io.aviso.toolchest.collections-spec
   (:use speclj.core
         io.aviso.toolchest.collections))
 

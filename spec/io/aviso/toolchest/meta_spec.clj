@@ -1,4 +1,4 @@
-(ns meta-spec
+(ns io.aviso.toolchest.meta-spec
   "Tests for io.aviso.toolchest.metadata"
   (:use speclj.core
         io.aviso.toolchest.metadata))

@@ -1,4 +1,4 @@
-(ns consume-spec
+(ns io.aviso.toolchest.consume-spec
   "Tests for the consume macro."
   (:use speclj.core
         io.aviso.toolchest.macros))

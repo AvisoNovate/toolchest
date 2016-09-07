@@ -1,4 +1,4 @@
-(ns threads-spec
+(ns io.aviso.toolchest.threads-spec
   "Tests for io.aviso.toolchest.threads."
   (:use speclj.core
         io.aviso.toolchest.threads))
