@@ -1,10 +1,14 @@
 (ns io.aviso.toolchest.control
 
-  "Lightweight monadic control flow utilities.")
+  "<EXPERIMENTAL>
+
+  Lightweight monadic control flow utilities.")
 
 
 (defmacro let-error
-  "Like let, but each init expression is destructured as
+  "<EXPERIMENTAL>
+
+  Like let, but each init expression is destructured as
 
     [value error]
 
@@ -34,19 +38,25 @@
 
 
 (defn return
-  "Wraps a non-error value for use in let-error (i.e. returns [value])."
+  "<EXPERIMENTAL>
+
+  Wraps a non-error value for use in let-error (i.e. returns [value])."
   [value]
   [value])
 
 
 (defn error
-  "Wraps an error value for use in let-error (i.e. returns [nil error-value])."
+  "<EXPERIMENTAL>
+
+  Wraps an error value for use in let-error (i.e. returns [nil error-value])."
   [error-value]
   [nil error-value])
 
 
 (defn some-error
-  "Helper enabling the use of functions that return an error representation or
+  "<EXPERIMENTAL>
+
+  Helper enabling the use of functions that return an error representation or
   nil (to signify the absence of errors). Passes through nils, wraps any other
   value in [nil <the-value>]."
   [maybe-error]
